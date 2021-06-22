@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -14,6 +15,6 @@ public class MovieEvent {
 
     @Id
     private String movieId;
-    private Date date;
+    private LocalDateTime date;
 
 }

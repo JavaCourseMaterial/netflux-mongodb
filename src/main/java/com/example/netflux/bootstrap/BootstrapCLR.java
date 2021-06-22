@@ -18,7 +18,7 @@ public class BootstrapCLR implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        // clear old data
+        // clear old data first
         movieRepository.deleteAll()
                 .thenMany(
                         Flux.just("Silence of the Lambdas", "AEon Flux", "Enter the Mono<Void>", "The Fluxxinator",
